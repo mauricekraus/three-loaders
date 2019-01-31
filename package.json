@@ -1,0 +1,41 @@
+{
+  "name": "three-loaders",
+  "version": "1.0.6",
+  "description": "This is a wrapper around threejs loaders to import it from any threejs application",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm version patch",
+    "clean": "rimraf dist",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "prepublish": "yarn run clean && yarn run build"
+  },
+  "keywords": [
+    "three",
+    "three.js",
+    "3d",
+    "draco",
+    "loader",
+    "gltf"
+  ],
+  "files": [
+    "lib",
+    "src"
+  ],
+  "bugs": {},
+  "author": "Maurice Kraus",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-minify": "^0.5.0",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "three": "^0.99.0"
+  }
+}
