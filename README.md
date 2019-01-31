@@ -2,7 +2,8 @@
 
 - This Repository wraps the original [three.js] loaders to use it in modern javascript applications
 - Until now it only wraps the gltf loader and the draco loader with no additional needed draco files
-- It's important to server the files in the draco folder to use the dracoLoader, please serve the files on the endpoint `/draco`
+- It is important to make the files available in the draco folder.
+- To use the Draco loader, please serve the files on the endpoint `/draco`.
 
 ## Installation
 
