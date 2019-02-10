@@ -1,6 +1,6 @@
 {
   "name": "three-loaders",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This is a wrapper around threejs loaders to import it from any threejs application",
   "main": "index.js",
   "scripts": {
