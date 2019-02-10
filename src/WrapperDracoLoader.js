@@ -1,8 +1,7 @@
 import DracoLoader from "./THREEDracoLoader";
 
-export default class Loader {
-  constructor(path) {
-    const loader = DracoLoader;
-    loader.setDecoderPath(path);
-  }
-}
+export default path => {
+  const loader = DracoLoader;
+  loader.setDecoderPath(path);
+  return new DracoLoader();
+};
