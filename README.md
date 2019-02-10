@@ -3,7 +3,6 @@
 - This Repository wraps the original [three.js] loaders to use it in modern javascript applications
 - Until now it only wraps the gltf loader and the draco loader with no additional needed draco files
 - It is important to make the files available in the draco folder.
-- To use the Draco loader, please serve the files on the endpoint `/draco`.
 
 ## Installation
 
@@ -31,7 +30,7 @@ import { THREEGLTFLoader, THREEDracoLoader } from "three-loaders";
 
 // Init THREE scene (add your code)
 const loader = THREEGLTFLoader();
-loader.setDRACOLoader(new THREEDRACOLoader());
+loader.setDRACOLoader(new THREEDRACOLoader("http://myServer.com/draco"));
 loader.load("file.gltf", gltf => {
   const model = gltf.scene;
   scene.add(model);
